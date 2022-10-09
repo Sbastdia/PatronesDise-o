@@ -1,4 +1,4 @@
-from application import app
+from application.__init__ import app
 from flask import Flask, jsonify#importamos los modulos necesarios
 from flask import render_template, request, redirect, url_for, flash, session
 from application.models.model_contactos import Contactos
@@ -38,7 +38,7 @@ def add():
             flash('Contacto guardado!')
             return redirect(url_for('index'))#redireciona al mismo index
         except:
-            flash('¡Ah ocurrido un error!')
+            flash('¡Ha ocurrido un error!')
             return redirect(url_for('index'))#redireciona al mismo index
         
 
