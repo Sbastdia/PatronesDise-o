@@ -1,7 +1,6 @@
 #Project Flask MVC
 
-from application import *
-#from flask_login import LoginManager
+from application.__init__ import *
 
 
 if __name__ == '__main__':

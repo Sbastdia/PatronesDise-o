@@ -1,4 +1,4 @@
-from application.__init__ import app
+from application import app
 from flask_mysqldb import MySQL
 import mysql.connector
 from flask_mysqldb import MySQL

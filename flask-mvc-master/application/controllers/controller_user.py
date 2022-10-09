@@ -1,4 +1,4 @@
-from application.__init__ import app
+from application import app
 from flask import render_template, request, redirect , url_for, flash
 from application.config.routes import urls
 

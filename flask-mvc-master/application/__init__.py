@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from application.controllers import *
+from controllers import controller_user, controller_contactos
 from flask_login import LoginManager
 
 app = Flask(__name__, template_folder="views")
